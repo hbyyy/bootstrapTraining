@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    .ch6_7_1 a:link {
+        color: red;
+    }
+
+    .ch6_7_1 a:visited {
+        color: black
+    }
+
+    .ch6_7_1 a:hover {
+        color: yellow;
+    }
+
+    .ch6_7_1 a:active {
+        color: blue;
+    }
+
+
+
+    .ch6_7_1 input {
+        display: block;
+    }
+
+    .ch6_7_1>input[type=text]:focus,
+    .ch6_7_1>input[type=password]:focus {
+        color: red;
+    }
+
+    .ch6_7_2 input:enabled+span {
+        color: blue;
+    }
+
+    .ch6_7_2 input[type=checkbox]:enabled+span {
+        color: red;
+    }
+
+    .ch6_7_2 input:checked+span {
+        color: yellowgreen;
+    }
+</style>
+
+<body>
+    <div class="ch6_7_1">
+        <a href="#" target="_blank">This is a link</a><br>
+        <a href="##">asdasd</a>
+        <input type="text" value="I'll be red when focused"><br>
+        <input type="password" value="I'll be red when focused">
+    </div>
+
+    <div class="ch6_7_2">
+        <form action="">
+            <input type="radio" value="male" checked="checked" name="gender"><span>Male</span>
+            <input type="radio" value="female" name="gender"><span>Female</span>
+            <input type="submit" value="제출">
+        </form>
+
+        <form action="">
+            <input type="checkbox" checked="checked" value="bicycle" name="have"> <span>I have a bicycle</span><br>
+            <input type="checkbox" value="car" name="have"> <span>I have a car</span><br>
+            <input type="checkbox" value="motorcycle" disabled> <span>I have a motorcycle</span>
+            <input type="submit" value="제출">
+        </form>
+    </div>
+</body>
+
+</html>
